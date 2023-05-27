@@ -3,7 +3,6 @@ package tech.joaovitor.employeemanager.service;
 import java.util.UUID;
 import java.util.List;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 
 import tech.joaovitor.employeemanager.exceptions.UserNotFoundException;
@@ -36,7 +35,7 @@ public class EmployeeService {
                 .orElseThrow(() -> new UserNotFoundException("User by id " + id + " was not found"));
     }
 
-    public void deleteEmployee(Long id){
+    public void deleteEmployee(Long id) {
         employeeRepo.deleteEmployeeById(id);
     }
 }
