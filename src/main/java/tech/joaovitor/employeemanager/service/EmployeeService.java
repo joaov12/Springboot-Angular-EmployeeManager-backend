@@ -4,11 +4,13 @@ import java.util.UUID;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import tech.joaovitor.employeemanager.exceptions.UserNotFoundException;
 import tech.joaovitor.employeemanager.model.Employee;
 import tech.joaovitor.employeemanager.repo.EmployeeRepo;
 
+@Service
 public class EmployeeService {
     private final EmployeeRepo employeeRepo;
 
